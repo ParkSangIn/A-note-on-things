@@ -1,0 +1,48 @@
+Python data types(objects)
+- Iterable : list, tuple, dictionary, string, set
+- Sequence : list, tuple, string
+- Mutable  : list, dictionary, set, user-defined class
+- Imutable : int, float, decimal, bool, string, tuple, range, unicode
+
+When using print statment, in string you don't have to order your format specifier.
+print("{2} {0} {1}".format(num1, num2, num3)) ----> this is totally fine.
+print("{} {} {}".format(num1, num2, num3)) ----> this also is totally fine.
+
+how to run python promram in python shell mode 
+v3 : exec(open("C:\\test.py", [encoding='utf-8']).read())
+
+how to change directory in python shell
+import os // os.chdir('dir')
+
+Terminology of division operation : dividend / divisor = quotient + remainder
+
+Precedance of operation
+PEMDAS: parantheses exponent multiplication division addition substraction
+
+
+List
+List comprehension
+[expression for item in iterable (if condition == True)]
+# flatten a list using a listcomp with two 'for'
+vec = [[1,2,3], [4,5,6], [7,8,9]]
+[num for elem in vec for num in elem]
+netsted list comprehension - python tutorial
+Ways to remove duplicates from list : set(list) can exclude duplicate values in list but sorting is lost. - GeeksforGeeks
+
+
+Set
+intersection : set(a) & set(b)
+set(list) can exclude duplicate values in list but sorting is lost. - GeeksforGeeks
+
+
+Map
+map(function, iterable) -> make iterator
+
+
+
+Python hierarchy
+- Module is a file which contains various Python functions and global variables. It is simply just .py extension file which has python executable code.
+- Package is a collection of modules. It must contains an __init__.py file as a flag so that the python interpreter processes it as such. The __init__.py could be an empty file without causing issues.
+- Library is a collection of packages.
+- Framework is a collection of libraries. This is the architecture of the program.
+- Application is an application.
